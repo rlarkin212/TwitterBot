@@ -22,7 +22,7 @@ for tweet in tweepy.Cursor(api.search, q='#lilPump').items():
             tweet.user.follow()
             print('Followed the user')
 
-        sleep(800)
+        sleep(1200)
 
     except tweepy.TweepError as e:
         print(e.reason)
